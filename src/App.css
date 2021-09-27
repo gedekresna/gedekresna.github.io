@@ -181,3 +181,30 @@ height: 6rem !important;
     display: none;
   }
 }
+
+/**********************ABOUT ME******************************/
+.profile-img {
+  border: 1px solid var(--primary-orange);
+  border-radius: 50%;
+  width: 20rem;
+  height: 30rem;
+  padding: .3rem;
+}
+
+.photo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-heading {
+  color: var(--primary-orange);
+  text-transform: uppercase;
+}
+
+@media(max-width: 468px){
+  .profile-img {
+     width: 10rem;
+     height: 20rem ;
+  }
+}
