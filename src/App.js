@@ -6,6 +6,7 @@ import Navbar from './Components/Navbar';
 import { Header }  from './Components/Header';
 import { AboutMe } from './Components/AboutMe';
 import { Services } from './Components/Services';
+import {Experience} from './Components/Experience'; 
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
       <Header/>
       <AboutMe/>
       <Services/>
+      <Experience/>
   </>
   );
 }
