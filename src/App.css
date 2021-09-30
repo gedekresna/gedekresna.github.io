@@ -4,12 +4,13 @@
 :root {
   --primary-white: #fff;
   --primary-orange: #f9ab0f;
-  --primary-dark: rgba(52,58,64,0);
+  --primary-dark: rgb(255,255,255,0);
   --primary-red: #ef4035;
   --primary-hover-red: #f35501;
   --primary-light-grey: #f4f4f4;
   --primary-grey:#ccd1d9;
   --primary-dark-grey:#666666;
+  --primary-black: #000000;
 }
 
 .App {
@@ -220,6 +221,7 @@ height: 6rem !important;
 }
 
 .services h1 {
+  text-transform: uppercase;
   color: var(--primary-dark);
 }
 
@@ -347,5 +349,105 @@ height: 6rem !important;
     direction: ltr;
     width: 100%;
   }
+}
+
+/**********************PORTOFOLIO******************************/
+.portofolio-wrapper {
+  background: var(--primary-light-grey);
+  padding: 3rem 0;
+}
+
+.portofolio-image {
+  width: 15rem;
+  border: 1px solid var(--primary-orange);
+  padding: 0 0 0.5rem;
+}
+
+/**********************OVERFLOW BOX******************************/
+
+.portofolio-image-box {
+  position: relative;
+  margin: 1rem;
+}
+
+.portofolio-wrapper h1 {
+  color: var(--primary-orange);
+}
+
+.overflow {
+  position: absolute;
+  opacity: 0;
+  background: var(--primary-black);
+  width: 15rem;
+  height: 9.8rem;
+  top: 0;
+  border: 1px solid var(--primary-red);
+  cursor: pointer;
+}
+
+.portofolio-image-box:hover .overflow {
+  opacity: 60%;
+  transition: 0.3s ease-in-out;
+}
+
+.portofolio-icon {
+  position: absolute;
+  color: var(--primary-orange);
+  opacity: 0;
+  margin-left: -8rem;
+  margin-top: 4rem;
+  font-size: 1.5rem;
+}
+
+.portofolio-image-box:hover .portofolio-icon {
+  opacity: 70%;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.portofolio-image-popupbox {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-bottom: 0.5rem;
+
+}
+
+@media(max-width: 768px){
+  .portofolio-image-popupbox {
+    width: 100%;
+  }
+}
+
+@media(max-height: 578px){
+  .portofolio-wrapper {
+    height: 100%;
+  }
+
+  .portofolio-image-popupbox {
+    width: 100%;
+  }
+}
+
+
+@media(max-height: 280px){
+  .portofolio-wrapper {
+    height: 90%;
+  }
+
+  .portofolio-image-popupbox {
+    width: 50%;
+  }
+}
+
+.hyper-link {
+  color: var(--primary-orange);
+  cursor: pointer;
+}
+
+.hyper-link:hover {
+  color: var(--primary-red);
+  cursor: pointer;
 }
 
