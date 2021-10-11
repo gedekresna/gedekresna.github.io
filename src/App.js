@@ -7,7 +7,8 @@ import { Header }  from './Components/Header';
 import { AboutMe } from './Components/AboutMe';
 import { Services } from './Components/Services';
 import {Experience} from './Components/Experience'; 
-import {Portofolio} from './Components/Portofolio'
+import {Portofolio} from './Components/Portofolio';
+import {Testimonials} from './Components/Testimonials';
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
       <Services/>
       <Experience/>
       <Portofolio/>
+      <Testimonials/>
   </>
   );
 }
