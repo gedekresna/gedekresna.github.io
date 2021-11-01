@@ -9,6 +9,7 @@ import { Services } from './Components/Services';
 import {Experience} from './Components/Experience'; 
 import {Portofolio} from './Components/Portofolio';
 import {Testimonials} from './Components/Testimonials';
+import {Contacts} from './Components/Contacts';
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
       <Experience/>
       <Portofolio/>
       <Testimonials/>
+      <Contacts/>
   </>
   );
 }

@@ -4,7 +4,7 @@
 :root {
   --primary-white: #fff;
   --primary-orange: #f9ab0f;
-  --primary-dark: rgb(255,255,255,0);
+  --primary-dark: #3C3939;
   --primary-red: #ef4035;
   --primary-hover-red: #f35501;
   --primary-light-grey: #f4f4f4;
@@ -141,7 +141,7 @@ height: 6rem !important;
 
 .typed-text {
   color: var(--primary-white);
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 2rem;
 }
 
@@ -514,4 +514,110 @@ height: 6rem !important;
 .carousel-root {
   margin: auto !important;
   margin-top: 3% !important;
+}
+
+
+/**********************CONTACTS******************************/
+
+.contact {
+  background: var(--primary-dark);
+  padding: 3rem 0;
+}
+
+.contact h1 {
+  color: var(--primary-orange);
+  padding: 1.3rem 0;
+  text-transform: uppercase;
+}
+
+.contact p {
+  color: var(--primary-light-grey);
+  font-size: 1.2rem;
+  padding: 0 4.2rem;
+}
+
+/**********************INPUTS******************************/
+
+.contact input, .contact textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: none;
+  resize: none;
+  border: 0;
+  border-bottom: 0.125rem solid var(--primary-dark-grey);
+  border-radius: 0;
+  color: var(--primary-orange);
+  outline: 0 !important;
+  box-shadow: none !important;
+  top: 0;
+  margin-bottom: 0;
+  padding-left: 0 !important;
+}
+
+.contact .container {
+  padding: 4rem 0;
+}
+
+.contact input:focus, .contact textarea:focus{
+  background: transparent;
+  color: var(--primary-orange);
+  border-bottom: 0.125rem solid var(--primary-dark-grey);
+}
+
+.contact textarea {
+  height: 13rem !important;
+  margin: 1rem 0;
+}
+
+.contact-btn {
+  margin: 1rem 0 0;
+  width:100% ;
+  background: none;
+}
+
+.line {
+  position: relative;
+  top: -0.8rem;
+  width: 0;
+  height: 0.125rem;
+  background: var(--primary-orange);
+  display: inline-block;
+}
+input:focus+.line, textarea:focus+.line {
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+} 
+
+input:form-control {
+  margin: -0.3rem 0;
+} 
+
+ textarea:form-control {
+  margin: -0.3rem 0;
+} 
+
+.success-message {
+font-weight: 700;
+color: green;
+}
+
+.error-message {
+  color: var(--primary-red);
+}
+
+
+/**********************MEDIA******************************/
+@media(max-width: 768px) {
+
+  .contact {
+    overflow-x: hidden;
+  }
+
+  .contact .container{
+  padding: 0 1rem;
+  }
+
+  .contact p {
+    padding: 0 1.2rem;
+  }
 }
