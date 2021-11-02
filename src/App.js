@@ -10,11 +10,12 @@ import {Experience} from './Components/Experience';
 import {Portofolio} from './Components/Portofolio';
 import {Testimonials} from './Components/Testimonials';
 import {Contacts} from './Components/Contacts';
+import {Footer} from './Components/Footer';
 
 function App() {
   return (
   <>
-  <Particles
+  <Particles id="home"
   className="particles-canvas"
     params={{
       particles:{
@@ -44,6 +45,7 @@ function App() {
       <Portofolio/>
       <Testimonials/>
       <Contacts/>
+      <Footer/>
   </>
   );
 }

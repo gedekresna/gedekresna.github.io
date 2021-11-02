@@ -122,7 +122,7 @@ export const Portofolio = () => {
     }
 
     return (
-        <div className="portofolio-wrapper">
+        <div id="portofolio" className="portofolio-wrapper">
             <div className="container">
                 <h1 className="text-uppercase text-center py-5">portofolio</h1>
                     <div className="image-box-wrapper row row-cols-auto justify-content-center">

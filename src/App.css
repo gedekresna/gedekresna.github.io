@@ -81,9 +81,7 @@ body{
   margin-right: 12px;
   margin-left: 12px;
   padding-bottom: 0px;
-color: var(--primary-white) !important;
-border-top: 0.1875rem solid var(--primary-dark);
-
+  color: var(--primary-white) !important;
 }
 
 .navbar-brand {
@@ -98,7 +96,7 @@ height: 6rem !important;
   }
 }
 
-.navbar-nav > li > a.active,.navbar-nav > li > a.active:focus {
+.navbar-nav > li > a.active,.navbar-nav > li > a:focus {
   border-top: 0.1875rem solid var(--primary-orange);
 }
 
@@ -620,4 +618,25 @@ color: green;
   .contact p {
     padding: 0 1.2rem;
   }
+}
+
+/**********************FOOTER COMPONENT******************************/
+.footer {
+  background: black;
+  color: var(--primary-light-grey);
+  padding: 3rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--primary-dark-grey);
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: var(--primary-orange);
+}
+
+.footer p {
+  margin: 0;
 }
